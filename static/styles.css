@@ -7,19 +7,19 @@
 
 .user-links a {
     text-decoration: none;
-    color: #004a8f;
+    color: #800020;
     margin-left: 10px;
     font-weight: bold;
     transition: color 0.2s;
 }
 
 .user-links a:hover {
-    color: #007bff;
+    color: #d4af37;
 }
 
 /* -------------------- Body & Headings -------------------- */
 body {
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f8 100%);
+    background: linear-gradient(135deg, #f8f1e4  0%, #f3e7d8  100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     padding: 20px;
@@ -28,7 +28,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #004a8f;
+    color: #800020;
     margin-bottom: 24px;
     font-size: 2.2em;
     font-weight: 700;
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-    color: #004a8f;
+    color: #800020;
     margin-top: 24px;
     margin-bottom: 16px;
     font-size: 1.6em;
@@ -60,7 +60,7 @@ form {
 input[type="text"],
 select {
     padding: 10px 14px;
-    border: 1px solid #cfe8ff;
+    border: 1px solid #d7b899;
     border-radius: 6px;
     font-size: 14px;
     transition: border 0.2s, box-shadow 0.2s;
@@ -69,13 +69,13 @@ select {
 input[type="text"]:focus,
 select:focus {
     outline: none;
-    border-color: #004a8f;
+    border-color: #d7b899;
     box-shadow: 0 0 0 3px rgba(0, 74, 143, 0.1);
 }
 
 button[type="submit"] {
     padding: 10px 18px;
-    background: #004a8f;
+    background: #d7b899;
     color: white;
     border: none;
     border-radius: 6px;
@@ -85,7 +85,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #003a70;
+    background: #c8a884;
     transform: translateY(-1px);
 }
 
@@ -146,7 +146,7 @@ button[type="submit"]:hover {
 }
 
 .clear-filters-btn {
-    background: #ef4444;
+    background: #da0606;
     color: white;
     border: none;
     padding: 6px 14px;
@@ -159,11 +159,11 @@ button[type="submit"]:hover {
 }
 
 .clear-filters-btn:hover {
-    background: #dc2626;
+    background: #da0606;   
 }
 
 .filter-indicator {
-    color: #004a8f;
+    color: #302c2c;
     font-weight: 600;
     font-size: 0.9em;
 }
@@ -195,8 +195,8 @@ mark {
 .genre-button {
     display: inline-block;
     background: #ffffff;
-    border: 1px solid #cfe8ff;
-    color: #004a8f;
+    border: 1px solid #d7b899;
+    color: #800020;
     padding: 8px 12px;
     border-radius: 8px;
     text-decoration: none;
@@ -206,15 +206,15 @@ mark {
 }
 
 .genre-button:hover {
-    background: #eaf6ff;
+    background: #f4c2c2;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 74, 143, 0.1);
 }
 
 .genre-button.active {
-    background: #004a8f;
+    background: #800020;
     color: #fff;
-    border-color: #00376b;
+    border-color: #5a0016;
     box-shadow: 0 4px 12px rgba(0, 74, 143, 0.15);
 }
 
@@ -296,7 +296,7 @@ mark {
 
 .book-detail h1 {
     margin-bottom: 20px;
-    color: #004a8f;
+    color: #800020;
     font-size: 2em;
 }
 
@@ -340,24 +340,24 @@ mark {
 }
 
 .btn-primary {
-    background: #004a8f;
+    background: #d7b899;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background: #003a70;
+    background: #c8a884;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: #eaf6ff;
-    color: #004a8f;
-    border: 1px solid #cfe8ff;
+    background: #f4c2c2;
+    color: #800020;
+    border: 1px solid #d7b899;
 }
 
 .btn-secondary:hover {
-    background: #d4ebff;
-    border-color: #004a8f;
+    background: #f1b8b8;
+    border-color: #d7b899;
 }
 
 .recommend-home {
@@ -397,7 +397,7 @@ mark {
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #f5f7fa 0%, #e8f0f8 100%);
+    background: linear-gradient(135deg, #f8f1e4  0%, #f3e7d8  100%);
     border-radius: 8px;
     padding: 16px;
     text-align: center;
@@ -412,7 +412,7 @@ mark {
 .stat-number {
     font-size: 2em;
     font-weight: 700;
-    color: #004a8f;
+    color: #800020;
     margin: 0;
 }
 
@@ -424,8 +424,8 @@ mark {
 
 .activity-item {
     padding: 12px;
-    border-left: 3px solid #004a8f;
-    background: #f9fbfd;
+    border-left: 3px solid #800020;
+    background: #f8f1e4;
     border-radius: 4px;
 }
 
@@ -595,6 +595,39 @@ mark {
     }
 }
 
+/* -------------------- Recommend Button (single override) -------------------- */
+/* Makes only the recommend button (inside .recommend-home) burgundy */
+.recommend-home .btn.btn-primary {
+    background: #800020; /* burgundy */
+    border-color: #5a0016;
+    color: #fff;
+}
+
+.recommend-home .btn.btn-primary:hover {
+    background: #5a0016;
+    border-color: #3f000e;
+    transform: translateY(-2px);
+}
+
+/* Recommend hub buttons: diary (light pink) and favorites (cream) */
+.recommend-actions .btn.btn-primary {
+    background: #ffd6e0; /* light pink */
+    color: #4a0026;
+    border: 1px solid #ffc0cc;
+}
+.recommend-actions .btn.btn-primary:hover {
+    background: #ffc0d6;
+}
+
+.recommend-actions .btn.btn-secondary {
+    background: #fff8e6; /* cream */
+    color: #66502b;
+    border: 1px solid #f5e7c8;
+}
+.recommend-actions .btn.btn-secondary:hover {
+    background: #fff2d1;
+}
+
 /* -------------------- Compact Diary on Homepage -------------------- */
 .diary-home-section {
     max-width: 1100px;
@@ -646,3 +679,73 @@ mark {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     }
 }
+
+
+/* -------------------- Login/Register Page -------------------- */ 
+.register-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.register-btn,
+.forgot-btn {
+    display: inline-block;   /* keep inline to match width */
+    background-color: #d7b899; 
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+}
+
+/* Optional spacing above forgot button */
+.forgot-btn {
+    margin-top: 10px;
+}
+
+
+
+/* -------------------- Unified Button Style -------------------- */
+button,
+button[type="submit"],
+button[type="button"],
+.register-btn,
+.forgot-btn,
+.btn,
+.clear-filters-btn,
+.btn-primary,
+.btn-secondary {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;        /* same size for all */
+    font-weight: 600;       /* consistent weight */
+    padding: 8px 12px;      /* uniform padding */
+    border-radius: 5px;     /* same rounded corners */
+    cursor: pointer;
+    text-decoration: none;  /* for links styled as buttons */
+}
+
+/* Optional: ensure colors remain as defined individually */
+.register-btn,
+.forgot-btn {
+    background-color: #d7b899; 
+    color: black;
+}
+
+.btn-primary {
+    background: #d7b899;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #f4c2c2;
+    color: #800020;
+}
+
+.clear-filters-btn {
+    background: #da0606;
+    color: white;
+}
+
+

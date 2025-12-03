@@ -3,10 +3,25 @@
 <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .recommend-title {
+            font-family: inherit; /* keep same site font */
+            font-size: 1.25em;
+            font-weight: 600;
+            color: #5a0016; /* elegant burgundy */
+            letter-spacing: 0.2px;
+            margin: 18px 0 12px 0;
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        @media (max-width: 480px) {
+            .recommend-title { font-size: 1.1em; }
+        }
+    </style>
 </head>
 <body>
 
-    <h1>{{ title }}</h1>
+    <h1 class="recommend-title">{{ title }}</h1>
     <div class="user-links">
         <a href="{{ url_for('home') }}">Home</a> |
         <a href="{{ url_for('profile') }}">Profile</a>

@@ -309,7 +309,7 @@
                         <p><strong>{{ lb.book.authors }}</strong></p>
                         <div class="book-card-list-actions">
                             <a href="{{ url_for('book_detail', book_id=lb.book.id) }}" class="view-btn">View</a>
-                            <a href="{{ url_for('remove_from_list', list_id=custom_list.id, book_id=lb.book.id) }}" class="remove-btn">Remove</a>
+                            <a href="{{ url_for('remove_from_custom_list', book_id=lb.book.id, list_id=custom_list.id) }}" class="remove-btn">Remove</a>
                         </div>
                     </div>
                 </div>

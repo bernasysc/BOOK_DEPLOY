@@ -143,7 +143,8 @@ def home():
     else:
         books = query.limit(12).all()
 
-    categories = Book.query.with_entities(Book.category).distinct().all()
+    # Build a simple list of category strings for the template
+    categories = [c[0] for c in Book.query.with_entities(Book.category).distinct().all() if c[0]]
 
     # Get best-selling books
     bestsellers = Book.query.filter_by(is_bestseller=True).order_by(Book.sales_millions.desc()).limit(6).all()
