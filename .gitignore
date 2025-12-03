@@ -5,10 +5,6 @@ __pycache__/
 # Virtual environment
 venv/
 
-# Local databases
-*.db
-instance/
-
 # Datasets
 *.csv
 data/
